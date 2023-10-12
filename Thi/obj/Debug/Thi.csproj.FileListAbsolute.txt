@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\Thi_C#\Thi\bin\Debug\Thi.exe.config
+C:\Users\Admin\Desktop\Thi_C#\Thi\bin\Debug\Thi.exe
+C:\Users\Admin\Desktop\Thi_C#\Thi\bin\Debug\Thi.pdb
+C:\Users\Admin\Desktop\Thi_C#\Thi\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\Thi_C#\Thi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\Thi_C#\Thi\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\Thi_C#\Thi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.frm_QLBN.resources
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.Properties.Resources.resources
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.csproj.CopyComplete
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.exe
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.pdb
+C:\Users\Admin\Desktop\Thi_C#\Thi\obj\Debug\Thi.frmTruyVet.resources
