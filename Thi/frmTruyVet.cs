@@ -37,7 +37,7 @@ namespace Thi
 
 
 
-        List<BenhNhan> listTemp ;
+        
 
         private int ktF(BenhNhan bn)
         {
@@ -82,9 +82,44 @@ namespace Thi
             }
         }
 
+
+        List<BenhNhan> listTemp = new List<BenhNhan>();
         private void cmb_BN_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string selectedValue = cmb_BN.Text;
+            string firstSixCharacters = selectedValue.Length >= 6 ? selectedValue.Substring(0, 6) : selectedValue;
+            BenhNhan temp = context.BenhNhans.FirstOrDefault(p => p.MaBN.ToString() == firstSixCharacters);
 
+            listTemp.Clear(); // Xóa tất cả các phần tử trong danh sách
+
+            if (cmb_BN.ValueMember.ToString() != "" ){
+                // Lấy ra ValueMember của ComboBox cmb_BN
+               
+
+                while (temp.BNTXG != null)
+                {
+                    
+                    temp = context.BenhNhans.FirstOrDefault(p => p.MaBN.ToString() == temp.BNTXG);
+                    listTemp.Add(temp);
+                }
+                dtgc_TV.Rows.Clear();
+
+
+
+                foreach (var item in listTemp)
+                {
+                    int index = dtgc_TV.Rows.Add();
+                    dtgc_TV.Rows[index].Cells[0].Value = item.MaBN;
+                    dtgc_TV.Rows[index].Cells[1].Value = item.TenBN;
+                    dtgc_TV.Rows[index].Cells[2].Value = item.TinhTrang.TenTT;
+
+
+                    string F = string.Format("F{0}", ktF(item));
+                    dtgc_TV.Rows[index].Cells[3].Value = F;
+                }   
+
+            }
+            
         }
     }
 }
