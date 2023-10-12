@@ -43,7 +43,16 @@ namespace Thi
 
         public void FillNhiemTuCombobox(List<BenhNhan> listBN)
         {
-            this.cmb_LayNhiem.DataSource = listBN;
+            List<BenhNhan> listTemp2 = new List<BenhNhan>();
+
+            // Thêm dòng trống vào danh sách tạm thời
+            listTemp2.Add(new BenhNhan { MaBN = "", TenBN = "" });
+
+            // Sau đó thêm dữ liệu từ danh sách chính vào danh sách tạm thời
+            listTemp2.AddRange(listBN);
+
+
+            this.cmb_LayNhiem.DataSource = listTemp2;
             this.cmb_LayNhiem.DisplayMember = "MaBN";
             this.cmb_LayNhiem.ValueMember = "MaBN";
         }
@@ -52,7 +61,7 @@ namespace Thi
         private int ktF (BenhNhan bn)
         {
             int f = 1;
-            if (bn.BNTXG == null)
+            if (bn.BNTXG == null || bn.BNTXG == "")
             {
                 return 0;
             } 
@@ -143,7 +152,7 @@ namespace Thi
 
                     try
                     {
-                        if (cmb_LayNhiem.SelectedValue.ToString() == "")
+                        if (cmb_LayNhiem.SelectedValue.ToString() == null  || cmb_LayNhiem.SelectedValue.ToString()=="")
                         {
                             BenhNhan b = new BenhNhan()
                             {
